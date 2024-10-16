@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assiment-1</title>
+    <title>Assignment-1</title>
     <style>
         *{
             margin: 0;
@@ -13,9 +13,6 @@
             background-color: rgb(176, 234, 236);
             width: 100vw;
             height: 100vh;
-
-        h1{
-            text-align: center;
         }
         .con{
             display: flex;
@@ -24,35 +21,63 @@
             align-items: center;
             width: 100vw;
             height: 90vh;
-        }
-        }
-        .box{
-            border: 2px solid black;
-            height: 25vh;
-            width: 22vw;
-            font-size: 3em;
-            text-align: center;
+            flex-wrap: wrap;
 
         }
-        #box-1{
+        .box-1{
+            border: 2px solid black;
             background-color: red;
+            width: 300px;
+            height: 24vh;
+            font-size: 4vw;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         #box-2{
+            border: 2px solid black;
             background-color: blue;
-        }
-        #box-3{
-            background-color: green;
-        }
+            width: 300px;
+            height: 24vh;
+            font-size: 4vw;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+        }
+        span{
+            border: 2px solid black;
+            background-color: green;
+            width: 300px;
+            height: 24vh;
+            font-size: 4vw;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        @media screen and (max-width: 600px) {
+            .box-1{
+                font-size: 4em;
+            }
+            #box-2{
+                font-size: 4em;
+            }
+            span{
+                font-size: 4em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="main">
-        <h1>Assignment-1</h1>
         <div class="con">
-            <div class="box" id="box-1">box-1</div>
-            <div class="box" id="box-2">box-1</div>
-            <div class="box" id="box-3">box-1</div>
+            <div class="box-1"><p>box-1</p></div>
+            <div id="box-2">box-2</div>
+            <span>box-3</span>
         </div>
     </div>
 </body>
